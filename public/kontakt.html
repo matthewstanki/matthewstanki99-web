@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Wizytówka | Mateusz Stankiewicz</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="wizytówka, strona, front, end, webdesign, mateusz, stankiewicz">
+	<meta name="description" content="Strona wizytówka przygotowana jako praca domowa na zajęcia HTML5/CSS3 na studiach podyplomowych kierunku Front-End Development">
+	<link rel="stylesheet" href="css/arkusz.css">
+</head>
+<body>
+	<main id="container">
+		<header>
+			<h1>Arsenal <span>Londyn</span></h1>
+			<nav class="nav1">
+				<ul><div style="padding-left:320px;">
+					<li><a href="index.html">HOMEPAGE</a></li>
+					<li><a href="o_nas.html">ABOUT ME</a></li>
+					<li><a href="kontakt.html">CONTACT</a></li></div>
+				</ul>
+			</nav>
+		</header>
+		
+		<article>
+			<figure>
+				<img src="img/Arsenal.png" alt="Arsenal" />
+				<figcaption>
+					<p>SUPPORT !</p>
+				</figcaption>
+			</figure>
+			<aside class="nav2">
+				<ul>
+					<li><a href="#sekcja_1">Paragraf 1</a></li>
+					<li><a href="#sekcja_2">Paragraf 2</a></li>
+					<li><a href="#sekcja_3">Paragraf 3</a></li>
+				</ul>
+			</aside>
+			<section>
+				<a name="sekcja_1"></a><p class="para">Thierry Henry is the club's top goalscorer with 228 goals in all competitions between 1999 and 2012, having surpassed Ian Wright's total of 185 in October 2005. Wright's record had stood since September 1997, when he overtook the longstanding total of 178 goals set by winger Cliff Bastin in 1939. Henry also holds the club record for goals scored in the League, with 175, a record that had been held by Bastin until February 2006.</p>
+			</section>
+			<section>
+				<a name="sekcja_2"></a><p class="para">Cras sit amet tristique turpis. Morbi euismod placerat bibendum. In risus nisl, aliquam sit amet lorem ac, vulputate varius magna. Praesent ut neque id lorem molestie viverra. Suspendisse potenti. Aenean a tristique lacus, ut sollicitudin ipsum. Cras non aliquet massa. Duis sit amet metus consectetur, condimentum mi dignissim, tempus sem. Praesent non arcu luctus, mollis felis ut, posuere metus. Donec volutpat turpis eget convallis lacinia. Donec sed cursus arcu.</p>
+			</section>
+			<section>
+				<a name="sekcja_3"></a><p class="para">Integer ultricies justo mauris, id vulputate augue sagittis nec. Phasellus maximus justo quis nisi lacinia fringilla. Mauris aliquam, justo sed semper blandit, odio mauris eleifend lorem, eget dictum nunc turpis sit amet nulla. Pellentesque dui libero, ornare vitae auctor a, iaculis ac nulla. In molestie consequat erat, eu iaculis odio rhoncus eu. Nullam lorem risus, ultrices quis volutpat a, vehicula vitae velit. Donec et velit quis nulla sollicitudin sagittis ut ac eros. Curabitur accumsan ex tortor, sit amet dapibus augue fermentum a.</p>
+			</section>
+		</article>
+		
+		
+		<section>
+			<form action="http://www.facebook.com" method="get">
+				<fieldset>
+					<legend>Informacje personalne</legend>
+					<label for="imie">Imię: </label>
+					<input type="text" id="imie" name="imie" />
+					<br />
+					<label for="nazwisko">Nazwisko: </label>
+					<input type="text" id="nazwisko" name="nazwisko" />
+					<br />
+					<label for="email">Adres email: </label>
+					<input type="email" id="email" name="email" />
+				<br />
+				<label for="textarea">Napisz sobie coś: </label>
+				<textarea id="textarea" name="textarea"></textarea>
+				<br />
+				<input type="button" id="submit_button" name="submit_button" value="Wyślij formularz" />
+				</fieldset>
+			</form>
+		</section>
+
+		
+		<!--RDFa-->
+		
+		<div class="jan-kowalski" vocab="http://schema.org/" typeof="Person">
+			<img property="image" src="img/fotka.jpg" alt="jan kowalski" width="200px" height="200px">
+			<p property="name">Joker</p>
+			<p property="jobTitle">Mass Murderer</p>
+			<p property="worksFor">Arkham Asylum</p>
+			<p property="founder">Gotham</p>
+			<p property="birthDate">????.??.??</p>
+			<p property="telephone">unknown</p>
+			<p property="email">whysoserious@email.com</p>
+		</div>
+		
+		<!--Mikrodane-->
+		
+		<div class="produkcik" itemscope itemtype="http://schema.org/Product">
+			<img itemprop="image" src="img/pilka.jpg" alt="jan kowalski" width="200px" height="200px">
+			<p itemprop="name">Piłka nożna</p>
+			<p itemprop="brand">Sport</p>
+			<p itemprop="color">Biały</p>
+			<p itemprop="isSimilarTo">Habba Babba</p>
+			<p itemprop="manufacturer">FIFA</p>
+			<p itemprop="description">Dla niektórych całe życie</p>
+			<p itemprop="itemCondition">NEW</p>
+		</div>
+		
+		<!--Mikroformaty-->
+		
+		<div class="hrecipe">
+			<span class="fn">Brameczka</span>
+			<div class="ingredient">W każdej sytuacji</div>
+			<div class="instructions">One Shot, One Goal</div>
+			<div class="duration">Od godziny do 23:59</div>
+			<div class="license">All rights reserved - Poland</div>
+		</div>
+		
+	
+	
+	<!--
+	<div class="tlo">
+		<div class="warstwa">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum libero at erat lobortis sollicitudin. Curabitur nec mauris auctor, lacinia erat malesuada, vehicula erat. Suspendisse scelerisque finibus ligula non maximus. Ut vel eros sed purus dapibus facilisis. Phasellus varius efficitur erat quis placerat. Fusce tempus gravida neque, at finibus velit molestie euismod. Duis et tempor tellus, in rhoncus ligula.</p>
+		<a href="#">www.wp.pl</a>
+	</div>
+	</div>
+	-->
+		<footer>
+			<p>Nie ma praw autorskich <time datetime="2015">2015</time></p>
+		</footer>
+	</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
